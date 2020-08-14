@@ -1,0 +1,65 @@
+.videos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__heading {
+    font-size: 5rem;
+    margin-top: 2rem;
+
+    letter-spacing: 0.5rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    margin: 2rem 0rem;
+    display: flex;
+
+    &-thumbnail {
+      margin-right: 2rem;
+      cursor: pointer;
+    }
+
+    &-text {
+      margin-top: -1rem;
+    }
+
+    &-meta {
+      display: flex;
+      align-items: center;
+      margin-top: -0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    &-channel {
+      font-weight: 500;
+
+      background-color: #000;
+      color: rgba($color: #fff, $alpha: 0.9);
+      display: inline-block;
+      padding: 0 0.5rem;
+      margin-right: 1rem;
+    }
+
+    &-date {
+      font-weight: 600;
+    }
+
+    &-title {
+      font-size: 3rem;
+      max-width: 80rem;
+      font-weight: 400;
+      cursor: pointer;
+      letter-spacing: -0.1rem;
+    }
+
+    &-desc {
+      max-width: 80rem;
+      font-size: 1.8rem;
+      line-height: 1.5;
+    }
+  }
+}
