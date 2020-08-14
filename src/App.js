@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import "./App.scss";
+import axios from "axios";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  useEffect(() => {
+    const url =
+      "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=ReactJS&type=video&key=AIzaSyAtXPOzrW1APY4Jqk6LICXECfKoWhYZp-g";
+
+    // axios
+    //   .get(url)
+    //   .then((data) => {
+    //     window.youtubeData = data;
+    //     console.log(data);
+    //   })
+    //   .catch((err) => console.log(err));
+  }, []);
+  return <div className="App">Youtube Clone</div>;
 }
 
 export default App;
