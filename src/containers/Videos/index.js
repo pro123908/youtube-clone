@@ -8,7 +8,10 @@ const Videos = () => {
     return (
       <div className="videos__item" key={id.videoId}>
         <div className="videos__item-thumbnail">
-          <img src={snippet.thumbnails.medium.url} />
+          <img
+            src={snippet.thumbnails.medium.url}
+            style={{ height: "100%", width: "100%" }}
+          />
         </div>
         <div className="videos__item-text">
           <div className="videos__item-title">{snippet.title}</div>
